@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Weather.Site</title>
+</head>
+
+<body class="img bg-blue-50 flex text-white items-center justify-center h-screen">
+    <div class="weather-card bg-blue-100 w-[90%] lg:max-w-lg 
+     h-auto text-gray-700 p-4">
+        <!-- Search bar -->
+        <div class="flex justify-center mx-auto">
+            <input id="city-input" type="text" placeholder="Enter a city"
+                class="border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-100 text-sm sm:text-base">
+            <button id="get-weather-btn" class="ml-2 p-2 w-44 h-10 bg-blue-50 text-slate rounded-lg text-sm sm:text-base">
+                Get Weather
+            </button>
+        </div>
+
+        <!-- Temperature info -->
+        <div class="flex mt-4 space-x-6 justify-center items-center">
+            <img id="weather-icon" src="images/04d.png" alt="Weather Icon" class="w-16 h-16">
+            <div class="flex flex-col space-y-2 ml-2">
+                <h1 id="temperature" class="text-slate text-4xl sm:text-6xl font-sans font-bold ml-2">29.9</h1>
+                <h1 id="degree" class="text-slate text-xl sm:text-2xl font-sans font-bold ml-6">°C</h1>
+            </div>
+
+            <div class="grid grid-row ml-2 space-y-1.5">
+                <h1 id="city-name" class="text-2xl sm:text-4xl font-sans text-slate font-bold ml-2">Karachi</h1>
+                <p id="feels-like" class="ml-2 text-sm sm:text-lg text-slate">Smoke</p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-6 mt-8 mb-10">
+            <p id="about-humidity" class="ml-2 text-sm sm:text-lg text-slate">Humidity: 84%</p>
+            <p id="about-wind" class="ml-2 text-sm sm:text-lg text-slate">Wind: 7.72 km/h</p>
+        </div>
+
+
+        <!--days
+        <div class="flex mt-20 justify-center items-center space-x-8">
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Sun</h1>
+                <img id="weather-icon" src="images/sun (1).png" alt="Weather Icon" class="w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">7 3</div>
+            </div>
+
+
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Mon</h1>
+                <img id="weather-icon" src="images/sun.png" alt="Weather Icon" class="w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">7 3</div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Tue</h1>
+                <img id="weather-icon" src="images/clouds.png" alt="Weather Icon" class="w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">7 2</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Wed</h1>
+                <img id="weather-icon" src="images/sun (1).png" alt="Weather Icon" class="w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">7 4</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Thu</h1>
+                <img id="weather-icon" src="images/rain.png" alt="Weather Icon" class="opacity-90 w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">7 1</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Fri</h1>
+                <img id="weather-icon" src="images/sun.png" alt="Weather Icon" class="w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">7 3</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h1 id="day" class="text-1xl font-semibold">Sat</h1>
+                <img id="weather-icon" src="images/cloudy (1).png" alt="Weather Icon" class="w-8 h-8 mt-2">
+                <div class="mt-2 text-sm">8 4</div>
+            </div>
+        </div>
+       end div-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
